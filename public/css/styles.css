@@ -1,0 +1,432 @@
+/* public/css/styles.css */
+
+header {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Використовуємо flexbox для горизонтального вирівнювання */
+    justify-content: flex-start; /* Кнопки вирівняні по лівому краю */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #28a745;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Фіксує футер внизу */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Забезпечує, що тіло займає всю висоту екрану */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    flex: 1; /* Залишає місце для основного контенту, не дозволяючи футеру наїжджати на нього */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 90%;
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: lightgray;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li form {
+    display: inline;
+}
+
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+.create-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.create-btn:hover {
+    background-color: #218838;
+}
+
+/* public/css/styles.css */
+
+/* Стилі для сторінки редагування жанру */
+.edit-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
+
+.create-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для сторінки перегляду всіх фільмів */
+.movies-page {
+    padding: 20px;
+}
+
+.movies-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.movies-page .btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.movies-page .btn:hover {
+    background-color: #555;
+}
+
+.movies-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.movies-page table th, .movies-page table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.movies-page table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.movies-page table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.movies-page table td img {
+    max-width: 100px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.movies-page .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.movies-page .actions form {
+    margin: 0;
+}
+
+/* styles.css */
+
+/* Загальний стиль для таблиці */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки таблиці */
+.table thead th {
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Рядки таблиці */
+.table tbody tr {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* Стиль для клітинок таблиці */
+.table tbody td {
+    padding: 10px;
+    font-size: 14px;
+    color: #495057;
+}
+
+/* Стиль для кнопок */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Кнопка додавання жанру */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Кнопка перегляду фільмів */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Кнопки редагування і видалення */
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Стиль для контейнера */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовок сторінки */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стиль для повідомлення про відсутність жанрів */
+.empty-message {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Додавання відступів для кнопок */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
